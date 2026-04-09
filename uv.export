@@ -1,2 +1,2 @@
 #!/bin/bash
-uv export --format requirements-txt --no-hashes | pip install -r /dev/stdin
+uv export --format requirements-txt --no-hashes | mamba run -n llm-eng pip install -r /dev/stdin
